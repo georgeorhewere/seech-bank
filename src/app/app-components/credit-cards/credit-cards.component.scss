@@ -1,0 +1,19 @@
+@import './../../../assets/scss/variables';
+
+.credit-card{
+    font-size: 5rem;
+    .purple{
+        color:$primary;
+    }
+    .blue{
+        color:$secondary;
+    }
+}
+/* responsive*/
+@media (max-width: 575.98px) { 
+    .credit-card{
+        font-size: 1rem;
+        justify-content: space-between;
+    }  
+    
+ }

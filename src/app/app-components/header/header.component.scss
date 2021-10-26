@@ -1,0 +1,33 @@
+@import './../../../assets/scss/variables';
+
+.site-logo{
+    font-family: Lato-Bold;
+    font-size:1.5rem;
+    span{
+        color: $primary;
+    }
+}
+.account-balance{
+    color: $primary;
+    font-size: 1.2rem;
+    font-family: Lato-Bold;
+    margin-right: 20rem;
+}
+
+/* responsive*/
+@media (max-width: 575.98px) { 
+    
+    .account-balance{        
+        margin-right: 1rem;
+    }
+    .right-content{
+        flex-direction: row !important;
+    }
+    .vr{
+        margin-right:1rem;        
+    }
+    .app-banner{
+        flex-wrap: initial;
+
+    }
+ }

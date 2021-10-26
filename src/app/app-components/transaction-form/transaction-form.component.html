@@ -1,0 +1,16 @@
+<div class="mt-3 mb-3">
+    <div class="mb-3"><span class="section-header">TRANSACTION DETAIL</span></div>
+    <form class="form-group" [formGroup]="transactionForm" (ngSubmit)="onSubmit(transactionForm .value)">
+        
+        <div class="input-group mb-3">
+            <input type="number" class="form-control" [class.input-error]="transactionForm.get('amount')?.touched && !transactionForm.get('amount')?.valid" id="amount" placeholder="120.50" [formControl]="transactionForm.controls['amount']">
+        </div>
+        
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" id="description" placeholder="description" [class.input-error]="transactionForm.get('description')?.touched && !transactionForm.get('description')?.valid"  [formControl]="transactionForm.controls['description']">
+        </div>
+
+        <button type="submit"       
+        [disabled]="transactionForm.invalid" class="btn btn-seech">Submit</button>
+    </form>
+</div>

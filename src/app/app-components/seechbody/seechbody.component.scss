@@ -1,0 +1,12 @@
+@import './../../../assets/scss/variables';
+
+.content{
+    background-color:#F0F0F0;
+    height: 100%;
+}
+
+.section-header{
+    font-size: $section-header;
+    font-family: $font-primary;
+    color: $section-header-color
+}
